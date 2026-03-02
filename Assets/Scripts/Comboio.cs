@@ -19,7 +19,7 @@ public class Comboio : MonoBehaviour
         if (_rare > 1)
             _controller.linearVelocity = _velocity*Vector3.forward*Time.deltaTime;
         else
-            _controller.linearVelocity = (50*Vector3.forward*Time.deltaTime);
+            _controller.linearVelocity = (2000*Vector3.forward*Time.deltaTime);
     }
 
     /*void OnCollisionEnter(Collision collision)

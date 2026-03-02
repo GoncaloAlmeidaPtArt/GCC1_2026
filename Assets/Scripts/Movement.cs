@@ -5,6 +5,7 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private string moveInput = "Move";
+    [SerializeField] private Transform model;
     
     private float _velocity;
     private Vector2 _direction;
@@ -27,9 +28,17 @@ public class Movement : MonoBehaviour
     {
         _direction = _move.ReadValue<Vector2>();
 
-        if (_direction.y > 0)
+        if (_direction.x > 0)
+            {
             _controller.linearVelocity = (transform.forward*speed*Time.fixedDeltaTime);
-        else if (_direction.y < 0)
+            model.rotation = Quaternion.Euler(0,-90,0);
+            }
+        else if (_direction.x < 0)
+        {
             _controller.linearVelocity = (-transform.forward*speed*Time.fixedDeltaTime);
+            model.rotation = Quaternion.Euler(0,90,0);
+        }
+        else
+            _controller.linearVelocity = Vector3.zero;
     }
 }

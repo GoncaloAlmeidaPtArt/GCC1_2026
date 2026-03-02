@@ -30,5 +30,7 @@ public class Spawn : MonoBehaviour
             spawnPoints.Remove(_lastTransform);
             _timer = 0.0f; 
         }
+
+        spawnBreaks = spawnBreaks*0.999f;
     }
 }
