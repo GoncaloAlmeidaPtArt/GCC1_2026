@@ -13510,7 +13510,7 @@ MonoBehaviour:
   - {fileID: 286302325}
   - {fileID: 1037171246}
   - {fileID: 1581615884}
-  spawnBreaks: {x: 1, y: 2}
+  spawnBreaks: {x: 1, y: 3}
   _prefab: {fileID: 8363654286877308535, guid: 24f4f60e54005f1419acc533e74f2b29, type: 3}
 --- !u!4 &1189534573
 Transform:

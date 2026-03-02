@@ -31,6 +31,6 @@ public class Spawn : MonoBehaviour
             _timer = 0.0f; 
         }
 
-        spawnBreaks = spawnBreaks*0.999f;
+        spawnBreaks = spawnBreaks*0.9999f;
     }
 }
